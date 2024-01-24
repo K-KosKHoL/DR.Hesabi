@@ -1,0 +1,44 @@
+
+.titl_his_con {
+
+    background: rgba(2, 2, 2 , 0.57);
+}
+
+.title_his {
+    color: #03f568;
+}
+.p_his {
+    color: #00aef8;
+}
+.warp_border {
+    height: 100%;
+    border-right: 3px dotted #989898;
+    display: block;
+}
+.border_tit_web {
+    display: block;
+    width: 0.625rem;
+    height: 2.5rem;
+    background: #2ed573;
+}
+.his_p_web {
+    font-size: 18px;
+    text-align: justify;
+}
+.his_info_con {
+    background: #fff;
+    box-shadow: 4px -4px 16px rgba(0, 0, 0 , 0.13);
+}
+.his_info_tit {
+    background: #2ed573;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+.his_info_p {
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+.his_icon {
+    color: #00aef8;
+    font-size: 34px;
+}

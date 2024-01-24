@@ -1,0 +1,399 @@
+<html dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DR.Hesabi</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../../css/bootstrap.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/WP-css/school/history.css">
+</head>
+<body>
+    <!----------------------------------------------------------------------
+    ------------------------------------------------------------------------
+                                HEADER SECTION
+    ------------------------------------------------------------------------
+    ------------------------------------------------------------------------
+    -->
+    <header class="header">
+        <nav class="nav">
+            <div class="container-fluid px-0" style="z-index: 11;">
+                <div class="nav-container py-4">
+                    <div class="row align-items-center justify-content-sm-between m-0">
+                        <div class="d-xl-none col-sm-3 me-3 col-5">
+                            <div class="list_res">
+                                <i class="bi bi-list" id="open_head"></i>
+                            </div>
+                        </div>
+                        <div class="me-xxl-5 col-xxl-1 col-xl-1 col-sm-4 d-flex justify-content-sm-center col-5 justify-content-end">
+                            <img class="img-fluid me-xxl-5 me-xl-0" src="../../images/logo-png.png" height="64" width="64" alt="">
+                        </div>
+                        <div class="col-xl-8 d-xl-block d-none col-xxl-7">
+                            <ul class="menu d-flex p-0 m-0 list-unstyled">
+                                <li class="menu_li me-5">
+                                    <a href="#" class="menu_link text-decoration-none d-flex align-items-center">
+                                        خانه             
+                                    </a>
+                                </li>
+                                <li class="menu_li me-5 position-relative li_d">
+                                    <a href="#" class="menu_link text-decoration-none">
+                                        هنرستان
+                                        <i class="bi bi-chevron-compact-down"></i>
+                                    </a>
+                                    <ul class="dropmenu list-unstyled p-1 bg-white position-absolute rounded-4 mt-1">
+                                        <li class="drop_li px-3 py-3">
+                                            <a href="#" class="drop_link text-decoration-none">تاریخچه تاسیس</a>
+                                        </li>
+                                        <li class="drop_li px-3 py-3">
+                                            <a href="#" class="drop_link text-decoration-none">رشته های تحصیلی</a>
+                                        </li>
+                                        <li class="drop_li px-3 py-3">
+                                            <a href="#" class="drop_link text-decoration-none">افتخارات هنرستان</a>
+                                        </li>
+                                        <li class="drop_li px-3 py-3">
+                                            <a href="#" class="drop_link text-decoration-none">فارغ التحصیلان</a>
+                                        </li>
+                                        <li class="drop_li px-3 py-3">
+                                            <a href="#" class="drop_link text-decoration-none">عوامل اداری</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu_li me-5 position-relative li_d">
+                                    <a href="#" class="menu_link text-decoration-none">
+                                        اطلاع رسانی
+                                        <i class="bi bi-chevron-compact-down"></i>
+                                    </a>
+                                    <ul class="dropmenu list-unstyled p-1 bg-white position-absolute rounded-4 mt-1">
+                                        <li class="drop_li px-3 py-3">
+                                            <a href="#" class="drop_link text-decoration-none">اخبار هنرستان</a>
+                                        </li>
+                                        <li class="drop_li px-3 py-3">
+                                            <a href="#" class="drop_link text-decoration-none">گالری تصاویر</a>
+                                        </li>
+                                        <li class="drop_li px-3 py-3">
+                                            <a href="#" class="drop_link text-decoration-none">هنرآموزان نمونه</a>
+                                        </li>
+                                        <li class="drop_li px-3 py-3">
+                                            <a href="#" class="drop_link text-decoration-none">هنرجویان نمونه</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu_li me-5 position-relative li_d">
+                                    <a href="#" class="menu_link text-decoration-none">
+                                        فروشگاه
+                                    </a>
+                                </li>
+                                <li class="menu_li me-5">
+                                    <a href="#" class="menu_link text-decoration-none">
+                                        ارتباط با ما
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-xxl-2 col-xl-3 col-sm-4 d-flex justify-content-end d-none ms-xxl-5" id="notLogin">
+                            <div class="log_in text-center position-relative">
+                                <a href="../../web-page/login.htm" class="text-decoration-none log_in_link_1 rounded-pill text-white">ورود</a>
+                                <a href="../../web-page/singup.htm" class="text-decoration-none log_in_link_2 rounded-pill text-white">عضویت</a>
+                            </div>
+                        </div>
+                        <div class="col-4 col-xl-2 d-none" id="loginTrue">
+                            <div class="ms-5 d-flex justify-content-end">
+                                <img class="img-fluid rounded-circle img_login" height="56px" width="56px" src="../../images/1c059eb44c15f8a6ddab2f7fc25f6908.png" alt="">
+                            </div>
+                            <div class="ms-5 position-relative d-flex justify-content-end d-none dashboard">
+                                <ul class="list-unstyled ul_login bg-white pt-3 rounded-4">
+                                    <a href="" class="py-2 text-decoration-none title_login d-flex justify-content-between align-items-center login_border">
+                                        <div class="">
+                                            <h5 class="fyb ms-5" id="stuName">
+
+                                            </h5>
+                                        </div>
+                                        <div class="">
+                                            <i class="title_icon_login bi bi-chevron-left"></i>
+                                        </div>
+                                    </a>
+                                    <li class="m li_login_s">
+                                        <a href="#" class="py-2 login_link_s text-decoration-none d-flex login_border">
+                                            <div class="d-flex align-items-center ms-3">
+                                                <i class="login_icon_s bi bi-duffle"></i>
+                                            </div>
+                                            <div class="d-flex align-items-center hover_link">
+                                                <span>کلاس من</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="m li_login_s">
+                                        <a href="#" class="py-2 login_link_s text-decoration-none d-flex login_border">
+                                            <div class="d-flex align-items-center ms-3">
+                                                <i class="login_icon_s bi bi-chat"></i>
+                                            </div>
+                                            <div class="d-flex align-items-center hover_link">
+                                                <span>پیغام ها</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="m li_login_s">
+                                        <a href="#" class="py-2 login_link_s text-decoration-none d-flex" id="logEx">
+                                            <div class="d-flex align-items-center ms-3">
+                                                <i class="login_icon_s bi bi-box-arrow-in-right"></i>
+                                            </div>
+                                            <div class="d-flex align-items-center">
+                                                <span id="logEx">خروج</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- HEADER MOBILE -->
+    <div class="head_m unC" id="head_m">
+        <div class="titl_head_m d-flex justify-content-between align-items-center border-bottom">
+            <img class="img-fluid" width="50" height="50" src="../../images/logo-png.png" alt="" srcset="">
+            <i class="bi bi-x titl_head_m_icon" id="clos_head_m"></i>
+        </div>
+        <ul class="menu d-flex p-0 m-0 list-unstyled flex-column">
+            <li class="menu_li mt-4">
+                <a href="#" class="fy menu_link text-decoration-none d-flex align-items-center">
+                    خانه             
+                </a>
+            </li>
+            <li class="menu_li mt-4 position-relative li_d" id="dropmenu_mh">
+                <a href="#" class="fy menu_link text-decoration-none">
+                    شاخه های تحصیلی
+                    <i class="bi bi-chevron-compact-down"></i>
+                </a>
+                <ul class="list-unstyled p-1 bg-white rounded-4 mt-1 d-none" id="dropMhUL">
+                    <li class="drop_li px-4 py-3">
+                        <a href="#" class="fy drop_link text-decoration-none">شبکه و نرم افزار</a>
+                    </li>
+                    <li class="drop_li px-4 py-3">
+                        <a href="#" class="fy drop_link text-decoration-none">الکترونیک</a>
+                    </li>
+                    <li class="drop_li px-4 py-3">
+                        <a href="#" class="fy drop_link text-decoration-none">الکتروتکنیک</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu_li mt-4">
+                <a href="#" class="fy menu_link text-decoration-none">
+                    تصاویر
+                </a>
+            </li>
+            <li class="menu_li mt-4">
+                <a href="#" class="fy menu_link text-decoration-none">
+                    درباره هنرستان
+                </a>
+            </li>
+            <li class="menu_li mt-4">
+                <a href="#" class="fy menu_link text-decoration-none">
+                    ارتباط با ما
+                </a>
+            </li>
+            <li class="menu_li mt-4" id="head_m_stat_li">
+                <a href="#" class="fy menu_link text-decoration-none" id="head_m_stat">
+
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!----------------------------------------------------------------------
+    ------------------------------------------------------------------------
+                                SLIDER SECTION
+    ------------------------------------------------------------------------
+    ------------------------------------------------------------------------
+    -->
+    <section class="slider">
+        <div class="container-fluid p-0">
+            <div class="row m-0">
+                <div class="col-12 p-0">
+                    <div class="history_con position-relative d-flex flex-column justify-content-center align-items-center">
+                        <img class="his_img img-flud" height="500px" width="100%" src="../../images/school/header_abxu0h-1900x1067.jpg" alt="">
+                        <div class="position-absolute p-3 rounded-3 titl_his_con d-flex flex-column align-items-center">
+                            <h4 class="ddb position-absoute title_his">
+                                تاریخچه تاسیس هنرستان دکتر حسابی از ابتدا تاسیس تا کنون
+                            </h4>
+                            <p class="fyb positio-absolute p_his mb-0">
+                                سال تاسیس 1330
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-5">
+            <div class="row mb-6">
+                <h3 class="fm his_tit d-flex align-items-center mb-4">
+                    <span class="border_tit_web ms-3 rounded-3"></span>
+                    تاریخچه ی هنرستان
+                </h3>
+                <p class="fyl his_p_web">
+                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد کتابهای زیادی در شصت و سه درصد گذشته حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد.
+                </p>
+            </div>
+            <div class="row m-0 mb-5 justify-content-center mt-5">
+                <!--//// ONE HIS ////-->
+                <div class="col-5">
+                    <div class="his_info_con rounded-3">
+                        <h5 class="fm his_info_tit p-3 text-white text-center">
+                            سال 1330
+                        </h5>
+                        <p class="fyl p-3 his_info_p">
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-1 d-flex flex-column justify-content-center align-items-center">
+                    <i class="bi bi-clock-history his_icon"></i>
+                    <!--  -->
+                    <span class="warp_border"></span>
+                    <!--  -->
+                </div>
+                <div class="col-5">
+                </div>
+                <!--//// ONE HIS ////-->
+                <div class="col-5">
+                </div>
+                <div class="col-1 d-flex flex-column justify-content-center align-items-center">
+                    <i class="bi bi-clock-history his_icon"></i>
+                    <!--  -->
+                    <span class="warp_border"></span>
+                    <!--  -->
+                </div>
+                <div class="col-5">
+                    <div class="his_info_con rounded-3">
+                        <h5 class="fm his_info_tit p-3 text-white text-center">
+                            سال 1360
+                        </h5>
+                        <p class="fyl p-3 his_info_p">
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                        </p>
+                    </div>
+                </div>
+                <!--//// ONE HIS ////-->
+                <div class="col-5">
+                    <div class="his_info_con rounded-3">
+                        <h5 class="fm his_info_tit p-3 text-white text-center">
+                            سال 1330
+                        </h5>
+                        <p class="fyl p-3 his_info_p">
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-1 d-flex flex-column justify-content-center align-items-center">
+                    <i class="bi bi-clock-history his_icon"></i>
+                    <!--  -->
+                    <span class="warp_border"></span>
+                    <!--  -->
+                </div>
+                <div class="col-5">
+                </div>
+                <!--//// ONE HIS ////-->
+                <div class="col-5">
+                </div>
+                <div class="col-1 d-flex flex-column justify-content-center align-items-center">
+                    <i class="bi bi-clock-history his_icon"></i>
+                    <!--  -->
+                    <span class="warp_border"></span>
+                    <!--  -->
+                </div>
+                <div class="col-5">
+                    <div class="his_info_con rounded-3">
+                        <h5 class="fm his_info_tit p-3 text-white text-center">
+                            سال 1360
+                        </h5>
+                        <p class="fyl p-3 his_info_p">
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!----------------------------------------------------------------------
+    ------------------------------------------------------------------------
+                                    FOOTER SECTION
+    ------------------------------------------------------------------------
+    ------------------------------------------------------------------------
+    -->
+    <section class="footer">
+        <div class="container-fluid bg-white pt-5">
+            <div class="container">
+                <div class="row justify-content-between mb-3">
+                    <div class="col-md-4 col-12">
+                        <h4 class="footer_1_title ddb">
+                            کمی درباره ما
+                        </h4>
+                        <p class="fyl">
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
+                        </p>
+                    </div>
+                    <div class="col-md-2 col-12 mt-4 mt-md-0">
+                        <h4 class="footer_1_title ddb">
+                            لینک های مفید
+                        </h4>
+                        <div class="d-flex flex-column">
+                            <a href="" class="fyl text-decoration-none link_footer">
+                                لورم اپیسوم
+                            </a>
+                            <a href="" class="fyl text-decoration-none link_footer">
+                                لورم اپیسوم
+                            </a>
+                            <a href="" class="fyl text-decoration-none link_footer">
+                                لورم اپیسوم
+                            </a>
+                            <a href="" class="fyl text-decoration-none link_footer">
+                                لورم اپیسوم
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-12 mt-4 mt-md-0">
+                        <h4 class="footer_1_title ddb">
+                            شبکه های اجتماعی
+                        </h4>
+                        <div class="d-flex mt-3">
+                            <a href="" class="fyl text-decoration-none link_footer ms-2">
+                                <img src="../../images/Soroush-color.png" alt="" class="img-fluid" width="32px" height="32px">
+                            </a>
+                            <a href="" class="fyl text-decoration-none link_footer ms-2">
+                                <img src="../../images/minimal@3x.png" alt="" class="img-fluid" width="32px" height="32px">
+                            </a>
+                            <a href="" class="fyl text-decoration-none link_footer ms-2">
+                                <img src="../../images/eitaa-icon-colorful.png" alt="" class="img-fluid" width="32px" height="32px">
+                            </a>
+                            <a href="" class="fyl text-decoration-none link_footer ms-2">
+                                <img src="../../images/main3 shad logo farsgraphic@1080x.png" alt="" class="img-fluid" width="32px" height="32px">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="row justify-contact-between mt-2">
+                    <div class="col-12 col-sm-6 mt-3 mt-sm-0 fyb  d-flex align-items-center">
+                        <p class="copy_fa_footer"> 
+                            تمامی حقوق این سایت برای هنرستان دکتر حسابی محفوظ است و هرگونه کپی برداری پیگرد قانونی دارد ©
+                        </p>
+                    </div>
+                    <div class="col-12 col-sm-6 mt-3 mt-sm-0 d-flex justify-content-end align-items-center">
+                        <p class="fyb">
+                        Copyright © 2023-2024 DR.Hesabi. All rights reserved
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- <script src="https://codepen.io/z-/pen/a8e37caf2a04602ea5815e5acedab458.js"></script> -->
+    <script src="../../JS/all.js"></script>
+    <script src="../../JS/evry.js"></script>
+</body>
+</html>    
