@@ -106,9 +106,9 @@ body {
 .log_in_link_2:hover {
      background-color: #0284C7;  
 }
-.dropmenu{
-    min-width: 11rem;
+.dropmenu {
     box-shadow: 2px -2px 15px rgba(0, 0, 0, 0.13);
+    min-width: 11rem;
     visibility: hidden;
     opacity: 0;
     z-index: 99;

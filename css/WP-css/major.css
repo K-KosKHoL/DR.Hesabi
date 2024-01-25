@@ -1,0 +1,64 @@
+.border_tit_major {
+    width: 5px;
+    height: 50px;
+    border-radius: 0.5rem;
+    display: block;
+    background: #FBBF24;
+    margin: 0 16px;
+}
+.mt-6 {
+    margin-top: 6rem;
+}
+.order_con {
+    background: #fff;
+    box-shadow: 4px -4px 16px rgba(0, 0, 0, 0.13);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tit_major {
+    font-size: 20px;
+}
+.a-major {
+    color: #64748b;
+}
+.active_major{
+    background: #f3f4f6;
+    color: #2ed573;
+    transition: all 0.3s ease-in-out;
+}
+.dec_mod {
+    overflow: hidden;
+    max-height: 50rem;
+}
+.bet_majors {
+    background: #fff;
+    box-shadow: 4px -4px 16px rgba(0, 0, 0, 0.13);
+    
+}
+.border_tit_modal {
+    width: 50px;
+    height: 5px;
+    border-radius: 0.5rem;
+    display: block;
+    background: #FBBF24;
+    margin: 0 16px;
+}
+.p_dec_modal {
+    text-align: justify;
+    font-size: 18px;
+}
+.shadow_modal {
+    background: linear-gradient(to top , #fff , rgba(255,255,255,0));
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 11.875rem;
+}
+.btn_modal {
+    outline: 0;
+    border: 0;
+    background: #2ed573;
+    color: #fff;
+    max-width: 10rem;
+}

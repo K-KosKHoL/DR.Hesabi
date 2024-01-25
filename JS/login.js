@@ -83,7 +83,7 @@ inpBtn.addEventListener('click' , function () {
         }
 
         if (event.card == inpCardValue && event.pass == inpPassValue) {
-            window.location = '../index.htm'
+            window.location = '../index.php'
             localStorage.setItem("login" , true)
         }else {
             login = false

@@ -4330,7 +4330,7 @@
     Object.defineProperty(val, 'abstract', {
       get: abstractCreator
     });
-    Object.defineProperty(val, 'html', {
+    Object.defineProperty(val, 'php', {
       get: function get() {
         return val.abstract.map(function (a) {
           return toHtml(a);
@@ -4341,7 +4341,7 @@
       get: function get() {
         if (!IS_DOM) return;
         var container = DOCUMENT.createElement('div');
-        container.innerHTML = val.html;
+        container.innerHTML = val.php;
         return container.children;
       }
     });
@@ -5562,8 +5562,8 @@
               node.appendChild(element);
             }
 
-            element.outerHTML = _abstract.map(function (a) {
-              return toHtml(a);
+            element.outerHTML= _abstract.map(function (a) {
+              return tophp(a);
             }).join('\n');
             node.removeAttribute(pendingAttribute);
             resolve();

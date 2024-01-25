@@ -39,7 +39,7 @@ if (getLocal) {
     stateHeader.innerHTML = 'ورود | ثبت نام'
     stateHeader.style.color = '#2ed573'
     stateHeader.addEventListener('click' , function () {
-        window.location = './web-page/login.htm'
+        window.location = './web-page/login.php'
     })
 }
 
@@ -55,7 +55,7 @@ exit.addEventListener('click' , function () {
     loginTrue.classList.add('d-none')
     loginTrue.classList.remove('d-sm-block')
     notLogin.classList.add('d-none')
-    notLogin.classList.add('d-sm-flex')
+    notLogin.classList.add('d-sm-block')
     localStorage.removeItem('login')
 })
 

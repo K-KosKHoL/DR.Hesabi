@@ -8,6 +8,14 @@
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/WP-css/log-in.css">
+    <?php
+    $link= mysqli_connect("localhost","root","","dr-hesabi");
+    if(mysqli_connect_errno()){
+        exit("خطایی با شرح زیر رخ داده است:".mysqli_connect_errno());
+    }
+    //$query = "SELECT * FROM 'student' WHERE stu_id='$username' AND stu_pass='$password'";
+    //$result = mysqli_query($link, $query);
+    ?>
 </head>
 <body class="d-flex align-items-center justify-content-center">
     <div class="log_in_form p-5 rounded-4 d-flex flex-column align-items-center">

@@ -125,7 +125,7 @@ inpSingUp.addEventListener('click' , function () {
             dataBase.push(newObj)
             modal.classList.remove('d-none')
             unModal.addEventListener('click' , function () {
-                window.location = '../index.htm'
+                window.location = '../index.php'
             })
         });   
         

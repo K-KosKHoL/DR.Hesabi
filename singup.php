@@ -9,11 +9,21 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/WP-css/singup.css">
     <link rel="stylesheet" href="../css/WP-css/log-in.css">
+    <?php
+    $link= mysqli_connect("localhost","root","","dr-hesabi");
+    if(mysqli_connect_errno()){
+        exit("خطایی به این شرخ رخ داده:".mysqli_connect_errno());
+    }
+   
+    //$querys="INSERT INTO `student` (`stu_id`, `stu_fname`, `stu_lname`, `stu_phone`, `stu_date`, `stu_pass`) VALUES ('12345', 'علی', 'خرسند', '0915812354', '2024-01-01', '12345678');";
+    
+    ?>
 </head>
 <body class="d-flex align-items-center justify-content-center">
     <div class="log_in_form p-5 rounded-4 d-flex flex-column align-items-center">
         <h3 class="fm login_title">
             ثبت نام
+            
         </h3>
         <div class="mt-2">
             <span class="fyl login_singup">قبلا ثبت نام کردی ؟</span>
@@ -52,7 +62,7 @@
                 <p class="info_en_p fy m-0">کلمه عبور تطابق ندارد!</p>
                 <i class="info_en_i bi bi-ban"></i>
             </div>
-            <input class="py-2 px-3 mt-3 rounded-3 inp_login_btn_s fy" type="button" value="ثبت نام" id="singup">
+            <input class="py-2 px-3 mt-3 rounded-3 inp_login_btn_s fy" type="button" value="ثبت نام" id="singup" >
         </div>
     </div>
     <div class="modal_sin d-flex justify-content-center align-items-center d-none" id="modal">
